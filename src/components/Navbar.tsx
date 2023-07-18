@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react';
 import { useState } from 'react';
+import { contactImg } from '../assets';
 
 const Navbar = () => {
 
@@ -10,6 +11,7 @@ const Navbar = () => {
   }
   return (
   <header>
+    <div className="header__container">
     <div className="header__top">
       <div className="header__top-container">
       <div className="logo">
@@ -29,8 +31,11 @@ const Navbar = () => {
           <li>Experience</li>
           <li>Contact</li>
         </ul>
+        <div className="header__contact_logo">
+          <img src={contactImg} alt="contact-img" />
+        </div>
         
-   
+        </div>
   </header>
   )
 }
