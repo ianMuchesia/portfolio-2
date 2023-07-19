@@ -163,12 +163,19 @@ select:focus {
   border: none;
 }
 
-/* Navbar */
+/*
+=============== 
+Navbar
+===============
+*/
 header{
   background-image: url(./assets/header-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 50px;
+  position: fixed; 
+  top: 0; 
+  width: 100%
 
 
 }
@@ -300,4 +307,21 @@ header{
   .header__contact_logo{
     display: block;
   }
+}
+
+
+/*
+=============== 
+Hero
+===============
+*/
+.hero{
+  background-image: url(./assets/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: 30% 15%;
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: 50px;
+
+
 }
