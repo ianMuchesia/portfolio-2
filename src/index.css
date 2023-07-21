@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500&family=Nunito+Sans:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&family=Nunito:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500&display=swap');
 *,
 ::after,
 ::before {
@@ -46,8 +46,8 @@ html {
   --black: #070808;
 
   /* fonts  */
-  --headingFont: "Nunito Sans", sans-serif;
-  --bodyFont: "Montserrat", sans-serif;
+  --headingFont: "Nunito", sans-serif;
+  --bodyFont: "Nunito Sans", sans-serif;
   --max-width: 1150px;
   --backgroundColor: var(--grey-500);
   --textColor: var(--black);
@@ -162,7 +162,9 @@ textarea:focus {
 select:focus {
   border: none;
 }
-
+.title{
+  text-align: center;
+}
 /*
 =============== 
 Navbar
@@ -175,7 +177,8 @@ header{
   height: 50px;
   position: fixed; 
   top: 0; 
-  width: 100%
+  width: 100%;
+  z-index: 9999;
 
 
 }
@@ -202,7 +205,7 @@ header{
   height: 100%;
   margin-top: 50px;
   position: fixed;
-  z-index: 1;
+  z-index: 99;
   top: 0;
   left: 0;
   border-right: 2px solid #f1f1f1;
@@ -320,8 +323,106 @@ Hero
   background-repeat: no-repeat;
   background-position: 30% 15%;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 60vh;
   margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3em 1em;
+  gap:1em;
 
 
 }
+.hero__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.hero__image{
+  display: flex;
+  flex-direction: column;
+}
+.hero__image img{
+  align-self: center;
+  height: 300px;
+  width:300px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 2;
+  object-position: 50% 20%;
+  
+}
+.typewriter{
+  font-size: 1.2rem;
+}
+.typeWriterText {
+  font-size: 25px;
+}
+.hero__content > h2{
+  color: var(--blue-400);
+  font-weight: 800;
+}
+
+.hero__content p{
+  font-size: 0.85rem;
+}
+.hero-btn{
+  background: var(--blue-400);
+  margin: 0.8em 0em;
+}
+.hero-btn:hover{
+  background: var(--blue-100);
+  
+}
+.first-grid{
+  margin-bottom: -7em;
+  animation: slideInRight ease 3s forwards, fadeOutLeft linear 6s backwards ;
+}
+.second-grid{
+align-self: flex-end;
+margin-top: -7em;
+z-index: 1;
+animation: slideInLeft ease 3s forwards, fadeOutLeft linear 6s backwards ;
+
+
+}
+
+
+@keyframes slideInRight {
+from{
+  transform: translateX(-50%);
+  opacity: 0.5;
+}  
+to{
+  transform: translateX(0%);
+  opacity: 1;
+}
+}
+
+@keyframes slideInLeft {
+  from{
+    transform: translateX(50%);
+    opacity: 0.5;
+  }  
+  to{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  }
+@media screen and (min-width:800px) {
+  .hero{
+    flex-direction: row;
+  }
+  .typeWriterText {
+    font-size: 40px;
+  }
+  .hero__image img{
+    height: 450px;
+    width:450px;
+  }
+  
+}
+
