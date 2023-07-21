@@ -375,17 +375,17 @@ Hero
 }
 .hero-btn:hover{
   background: var(--blue-100);
-  
+
 }
 .first-grid{
   margin-bottom: -7em;
-  animation: slideInRight ease 3s forwards, fadeOutLeft linear 6s backwards ;
+  animation: slideInRight ease 3s 1s forwards ;
 }
 .second-grid{
 align-self: flex-end;
 margin-top: -7em;
 z-index: 1;
-animation: slideInLeft ease 3s forwards, fadeOutLeft linear 6s backwards ;
+animation: slideInLeft ease 3s 1s forwards ;
 
 
 }
@@ -415,6 +415,7 @@ to{
 @media screen and (min-width:800px) {
   .hero{
     flex-direction: row;
+    
   }
   .typeWriterText {
     font-size: 40px;
@@ -424,5 +425,12 @@ to{
     width:450px;
   }
   
+}
+
+@media screen and (min-width:1000px) {
+  .hero{
+    gap:3em;
+    
+  }
 }
 

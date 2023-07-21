@@ -1,4 +1,5 @@
 import { Hero, Navbar } from "./components"
+import Experience from "./components/Experience"
 
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
     <>
     <Navbar/>
     <Hero/>
+    <Experience/>
     </>
   )
 }
