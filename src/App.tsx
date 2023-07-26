@@ -1,5 +1,4 @@
-import { Hero, Navbar } from "./components"
-import Experience from "./components/Experience"
+import { Hero, Navbar, Skills } from "./components"
 
 
 const App = () => {
@@ -7,7 +6,7 @@ const App = () => {
     <>
     <Navbar/>
     <Hero/>
-    <Experience/>
+    <Skills/>
     </>
   )
 }

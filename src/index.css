@@ -85,8 +85,9 @@ a {
   text-decoration: none;
 }
 p {
-  margin: 0rem;
   max-width: 40em;
+  margin: 0rem;
+ font-size: 0.9rem;
 }
 
 h1,
@@ -149,7 +150,7 @@ button {
   border-radius: 30px;
 }
 button:hover {
-  background-color: var(--textColor);
+  background-color: #fff;
   color: black;
 }
 input:focus {
@@ -366,9 +367,7 @@ Hero
   font-weight: 800;
 }
 
-.hero__content p{
-  font-size: 0.85rem;
-}
+
 .hero-btn{
   background: var(--blue-400);
   margin: 0.8em 0em;
@@ -434,3 +433,56 @@ to{
   }
 }
 
+
+
+/*
+=============== 
+Skills
+===============
+*/
+
+
+.skills_section {
+ 
+  padding: 4em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skills_title {
+  text-align: center;
+}
+.skills_title span {
+  color: var(--blue-500);
+}
+.skills_section > p {
+  margin-bottom: 0rem;
+
+  font-size: 1rem;
+  text-align: center;
+}
+.skills_container {
+  margin: 2em 0em;
+  display: grid;
+  place-items: center;
+  gap: 2em;
+}
+
+.skills_container_card {
+
+  padding: 1.5em;
+  cursor: pointer;
+transition: 0.3s ease-in;
+
+  border-radius: 15px;
+}
+
+.skills_container_card_image {
+  height: 200px;
+  width: 100%;
+  object-fit: fill;
+}
+.skills_container_desc{
+  text-align: center;
+}
